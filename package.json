@@ -1,0 +1,24 @@
+{
+  "name": "data-structures-and-algorithms-401",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariamAlshammari/data-structures-and-algorithms-401.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariamAlshammari/data-structures-and-algorithms-401/issues"
+  },
+  "homepage": "https://github.com/MariamAlshammari/data-structures-and-algorithms-401#readme",
+  "dependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.5"
+  }
+}
