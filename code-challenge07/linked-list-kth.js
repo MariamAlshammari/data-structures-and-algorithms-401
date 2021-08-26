@@ -13,23 +13,25 @@ class LinkedList {
         if (!this.head) {
             this.head = node;
             if (this.length == 0) {
-        
-                this.tail=node
-                
-              
-               }
-            
+
+                this.tail = node
+
+
+            }
+
             return this;
         }
         let current = this.head;
-        this.length=this.length+1;
-        
-        while (current.next) { current = current.next;
-            this.length=this.length+1; }
-        current.next = node;
-       
+        this.length = this.length + 1;
 
-            
+        while (current.next) {
+            current = current.next;
+            this.length = this.length + 1;
+        }
+        current.next = node;
+
+
+
         return this;
     }
 
@@ -81,31 +83,31 @@ class LinkedList {
             this.length++;
 
             if (this.length == 0) {
-        
-                this.tail=newnode
-                
-              
-               }
+
+                this.tail = newnode
+
+
+            }
 
         }
     }
-   
 
-    kthFromEnd(k){
-        if(k<0 || k>this.length){
+
+    kthFromEnd(k) {
+        if (k < 0 || k > this.length) {
             return 'Wrong Value of k';
         }
-else{
-        let current=this.head
-        for(let i=1;i< (this.length-k) +1;i++)
-{
-           
-            current = current.next;
-        }
-    
-        return current.value;
+        else {
+            let current = this.head
+            for (let i = 1; i < (this.length - k) + 1; i++) {
 
-    }}
+                current = current.next;
+            }
+
+            return current.value;
+
+        }
+    }
 
 
 
