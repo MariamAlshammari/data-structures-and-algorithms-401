@@ -49,4 +49,4 @@ Returns: Boolean indicating whether or not the queue is empty
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![stack-and-queue](/code-challenge09/stack-and-queue.png)
+![stack-and-queue](/code-challenge10/stack-and-queue.png)
