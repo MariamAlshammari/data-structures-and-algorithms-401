@@ -22,14 +22,14 @@ class pseudoQueue {
     }
 
     dequeue() {
-        if(this.stack1.peek()!=="empty"){
-         return this.stack1.pop();
+        if(this.stack2.peek()!=="empty"){
+         return this.stack2.pop();
          }
-         while(this.stack2.peek()!=="empty"){
-             this.stack1.push(this.stack2.pop());
+         while(this.stack1.peek()!=="empty"){
+             this.stack2.push(this.stack1.pop());
 
          }
-         return this.stack1.pop();
+         return this.stack2.pop();
 
     
         // isEmpty() {
