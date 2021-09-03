@@ -2,8 +2,8 @@
 
 const pseudoQueue = require('../stack-queue-pseudo');
 
-describe('Stack', () => {
-it('Can successfully push ontopseudoQueue,Can successfully peek the next item on the stack ', () => {
+describe('Sudo queue', () => {
+it('Can successfully enqueue ontopseudoQueue,Can successfully peek the next item on the stack ', () => {
     const pseudo = new pseudoQueue();
     // stack.push(1);
     // expect(stack.peek()).toBe(1);
@@ -11,7 +11,7 @@ it('Can successfully push ontopseudoQueue,Can successfully peek the next item on
     // stack.push(3);
     expect(pseudo.enqueue(5)).toBe(5);
 });
-it('Can successfully pop from pseudoQueue, ', () => {
+it('Can successfully dequeue from pseudoQueue, ', () => {
     const pseudo = new pseudoQueue();
     // pseudo.enqueue(9);
     pseudo.enqueue(6);
