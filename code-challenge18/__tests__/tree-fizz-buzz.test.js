@@ -1,12 +1,12 @@
 "use strict";
 
-const BinaryTree = require("../binaryTree");
+const kAryTree = require("../k-aryTree");
 const Node = require("../node");
 const fizzBuzzTree = require("../tree-fizz-buzz");
 
 describe("K-ary tree", () => {
     it("value divisible by 3", () => {
-        let tree = new BinaryTree();
+        let tree = new kAryTree();
         let node0 = new Node(2);
         let node1 = new Node(5);
         let node2 = new Node(7);
@@ -31,31 +31,31 @@ describe("K-ary tree", () => {
         tree.root = node0;
 
         // let result = fizzBuzzTree(tree);
-        // let tree = new BinaryTree();
+        // let tree = new kAryTree();
         tree.root = new Node(3);
         let result = fizzBuzzTree(tree);
         expect(result.root.value).toEqual("Fizz");
     });
     it("value divisible by 5", () => {
-        let tree = new BinaryTree();
+        let tree = new kAryTree();
         tree.root = new Node(5);
         let result = fizzBuzzTree(tree);
         expect(result.root.value).toEqual("Buzz");
     }); it("value divisible by 5 & 3", () => {
-        let tree = new BinaryTree();
+        let tree = new kAryTree();
         tree.root = new Node(15);
         let result = fizzBuzzTree(tree);
         expect(result.root.value).toEqual("FizzBuzz");
     });
 
     it("value not divisible by 5 & 3", () => {
-        let tree = new BinaryTree();
+        let tree = new kAryTree();
         tree.root = new Node(7);
         let result = fizzBuzzTree(tree);
         expect(result.root.value).toEqual("7");
     });
     it("empty tree", () => {
-        let tree = new BinaryTree();
+        let tree = new kAryTree();
         tree.root = null;
         let result = fizzBuzzTree(tree);
         expect(result.root).toEqual(undefined);
