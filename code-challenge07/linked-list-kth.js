@@ -91,15 +91,29 @@ class LinkedList {
 
         }
     }
+    // kthFromEnd(k) {
+    //     if (k < 0 || k >= this.length) {
+    //         return 'Wrong Value of k';
+    //     }
+    //     else {
+    //         let current = this.head
+    //         for (let i = 1; i < (this.length - k) ; i++) {
 
+    //             current = current.next;
+    //         }
+
+    //         return current.value;
+
+    //     }
+    // }
 
     kthFromEnd(k) {
-        if (k < 0 || k >= this.length) {
+        if (k < 0 || k > this.length) {
             return 'Wrong Value of k';
         }
         else {
             let current = this.head
-            for (let i = 1; i < (this.length - k) ; i++) {
+            for (let i = 1; i < (this.length - k) + 1; i++) {
 
                 current = current.next;
             }
