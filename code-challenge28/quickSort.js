@@ -12,9 +12,9 @@ function quickSort(arr, left, right) {
     return arr;
 }
 function partition(arr, left, right) {
-    var pivot   = arr[Math.floor((right + left) / 2)], //middle element
-        i       = left, //left pointer
-        j       = right; //right pointer
+    var pivot = arr[Math.floor((right + left) / 2)], //middle element
+        i = left, //left pointer
+        j = right; //right pointer
     while (i <= j) {
         while (arr[i] < pivot) {
             i++;
@@ -30,7 +30,7 @@ function partition(arr, left, right) {
     }
     return i;
 }
-function swap(arr, leftIndex, rightIndex){
+function swap(arr, leftIndex, rightIndex) {
     var temp = arr[leftIndex];
     arr[leftIndex] = arr[rightIndex];
     arr[rightIndex] = temp;
